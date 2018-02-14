@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.2--- Release Date: Feb 13, 2018---
+- Completed Job 3 - Ordered List Page Features (Mike)
+
 ---Version 1.1--- Release Date: Feb 13, 2018---
 - Completed Job 2 - Homepage Features (Johnny)
 
