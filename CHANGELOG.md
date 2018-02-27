@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.6--- Release Date: Feb 27, 2018---
+- Completed Job 7 - Simple User Roles (Mike)
+
 ---Version 1.5--- Release Date: Feb 27, 2018---
 - Completed Job 6 - Added pagination to Maintenance page (Johnny)
 - Updated Helpme page content (Johnny)
