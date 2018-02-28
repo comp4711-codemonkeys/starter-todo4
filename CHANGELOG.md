@@ -6,6 +6,28 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.0--- Release Date: Feb 27, 2018---
+- Completed Job 11 - Polish the Task Item Maintenance (Mike)
+
+---Version 1.9--- Release Date: Feb 27, 2018---
+- Completed Job 10 - Task Item Maintenance (Johnny)
+
+---Version 1.8--- Release Date: Feb 27, 2018---
+- Completed Job 9 - Role-specific maintenance list (Mike)
+
+---Version 1.7--- Release Date: Feb 27, 2018---
+- Fixed tmp folder pathing issue (Johnny)
+- Removed tmp folder from .gitignore (Johnny)
+- Completed Job 8 - Added features for completing work (Johnny)
+
+---Version 1.6--- Release Date: Feb 27, 2018---
+- Completed Job 7 - Simple User Roles (Mike)
+- Added tmp folder to .gitignore (Mike)
+
+---Version 1.5--- Release Date: Feb 27, 2018---
+- Completed Job 6 - Added pagination to Maintenance page (Johnny)
+- Updated Helpme page content (Johnny)
+
 ---Version 1.4--- Release Date: Feb 13, 2018---
 - Completed Job 5 - Help Wanted Page Features (Mike)
 
