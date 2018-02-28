@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.9--- Release Date: Feb 27, 2018---
+- Completed Job 10 - Task Item Maintenance (Johnny)
+
 ---Version 1.8--- Release Date: Feb 27, 2018---
 - Completed Job 9 - Role-specific maintenance list (Mike)
 
