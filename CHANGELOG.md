@@ -6,6 +6,11 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.7--- Release Date: Feb 27, 2018---
+- Fixed tmp folder pathing issue (Johnny)
+- Removed tmp folder from .gitignore (Johnny)
+- Completed Job 8 - Added features for completing work (Johnny)
+
 ---Version 1.6--- Release Date: Feb 27, 2018---
 - Completed Job 7 - Simple User Roles (Mike)
 - Added tmp folder to .gitignore (Mike)
