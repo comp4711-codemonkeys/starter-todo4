@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.1--- Release Date: Mar 06, 2018---
+- Completed Lab 7 Question 3 - 5 - Added PHPUnit base files and a sample unit test (Mike)
+
 ---Version 2.0--- Release Date: Mar 06, 2018---
 - Completed Lab 7 Question 2 - Added TaskEntity class in models (Johnny)
 
