@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.0--- Release Date: Mar 06, 2018---
+- Completed Lab 7 Question 2 - Added TaskEntity class in models (Johnny)
+
 ---Version 2.0--- Release Date: Feb 27, 2018---
 - Completed Job 11 - Polish the Task Item Maintenance (Mike)
 
