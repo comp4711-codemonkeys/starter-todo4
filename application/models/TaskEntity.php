@@ -1,58 +1,69 @@
 <?php
-
-/**
- * Task entity class, with setter methods for each property.
- */
-class TaskEntity extends CI_Model {
+class TaskEntity extends Entity {
     
-    var $id;
-    var $task;
-    var $priority;
-    var $size;
-    var $group;
-    var $deadline;
-    var $status;
-    var $flag;   
-
-    // If this class has a setProp method, use it, else modify the property directly
-    public function __set($key, $value) {
-        // if a set* method exists for this key, 
-        // use that method to insert this value. 
-        // For instance, setName(...) will be invoked by $object->name = ...
-        // and setLastName(...) for $object->last_name = 
-        $method = 'set' . str_replace(' ', '', ucwords(str_replace(['-', '_'], ' ', $key)));
-
-        if (method_exists($this, $method))
-        {
-            $this->$method($value);
-
-            return $this;
+    protected $id;
+    protected $task;
+    protected $priority;
+    protected $size;
+    protected $group;
+    protected $deadline;
+    protected $status;
+    protected $flag;   
+   
+    public function setId($value) {
+        if (empty($value)) {
+            throw new InvalidArgumentException('An Id must have a value');
         }
-
-        // Otherwise, just set the property value directly.
-        $this->$key = $value;
-        
+        if ($value < 0) {
+            throw new Exception('Id must be a value greater or equal to 0');
+        }
+        $this->id = $value;
         return $this;
     }
     
-    function setId($value) {
-        $this->id = $value;
-    }
-    
     function setTask($value) {
+        if (empty($value)) {
+            throw new InvalidArgumentException('A Task cannot be empty');
+        }
+        if (strlen($value) > 30) {
+            throw new Exception('A Task cannot be longer than 30 characters');
+        }
         $this->task = $value;
+        return $this;
     }
     
     function setPriority($value) {
+        if (empty($value)) {
+            throw new InvalidArgumentException('A Priorty cannot be empty');
+        }
+        if ($value < 1 || $value > 3) {
+            throw new Exception('A Prioty has to be between 1 and 3');
+        }
         $this->priority = $value;
+        return $this;
     }
     
     function setSize($value) {
+        if (empty($value)) {
+            throw new InvalidArgumentException('A Size cannot be empty');
+        }
+        if ($value < 1 || $value > 3) {
+            throw new Exception('A Size has to be between 1 and 3');
+        }
         $this->size = $value;
+        return $this;
     }
     
     function setGroup($value) {
+        if (empty($value)) {
+            throw new InvalidArgumentException('A Group cannot be empty');
+        }
+        if ($value < 1 || $value > 4) {
+            throw new Exception('A Group has to be between 1 and 4');
+        }
         $this->group = $value;
+        return $this;
+
     }
     
     function setDeadline($value) {
