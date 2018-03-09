@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.3--- Release Date: Mar 08, 2018---
+- Completed Lab 7 Added code coverage settings to xml and added the reports dir to .gitignore (Mike)
+
 ---Version 2.2--- Release Date: Mar 08, 2018---
 - Completed Lab 7 Added Unit Test: TaskListTest to ensure there are more uncompleted tasks than completed ones (Mike)
 
