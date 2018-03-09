@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.6--- Release Date: Mar 09, 2018---
+- Added Travis CI configuration file (Johnny)
+
 ---Version 2.5--- Release Date: Mar 09, 2018---
 - Removed magic getter from Entity - fixes issue on the 'Work' page (Johnny)
 
