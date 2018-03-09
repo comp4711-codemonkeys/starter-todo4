@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.5--- Release Date: Mar 09, 2018---
+- Removed magic getter from Entity - fixes issue on the 'Work' page (Johnny)
+
 ---Version 2.4--- Release Date: Mar 08, 2018---
 - Completed Lab 7 Updated TaskEntity setter functions and added TaskTest unit tests to ensure setter logic works (Johnny)
 - Moved unit tests into proper subfolder location (Johnny)
