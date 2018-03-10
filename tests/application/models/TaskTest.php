@@ -9,7 +9,7 @@ class TaskTest extends TestCase
     {
         // Load CI instance normally
         $this->CI = &get_instance();
-        $this->CI->load->model('taskentity');
+        $this->CI->load->model('taskEntity');
         $this->taskEntitiy = new TaskEntity();
     }
 

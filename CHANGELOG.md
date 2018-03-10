@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.7--- Release Date: Mar 09, 2018---
+- Added magic getter back to Entity to fix unit test failures (Johnny)
+
 ---Version 2.6--- Release Date: Mar 09, 2018---
 - Added Travis CI configuration file (Johnny)
 
