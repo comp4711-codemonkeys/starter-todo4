@@ -6,6 +6,31 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.7--- Release Date: Mar 09, 2018---
+- Added magic getter back to Entity to fix unit test failures (Johnny)
+
+---Version 2.6--- Release Date: Mar 09, 2018---
+- Added Travis CI configuration file (Johnny)
+
+---Version 2.5--- Release Date: Mar 09, 2018---
+- Removed magic getter from Entity - fixes issue on the 'Work' page (Johnny)
+
+---Version 2.4--- Release Date: Mar 08, 2018---
+- Completed Lab 7 Updated TaskEntity setter functions and added TaskTest unit tests to ensure setter logic works (Johnny)
+- Moved unit tests into proper subfolder location (Johnny)
+
+---Version 2.3--- Release Date: Mar 08, 2018---
+- Completed Lab 7 Added code coverage settings to xml and added the reports dir to .gitignore (Mike)
+
+---Version 2.2--- Release Date: Mar 08, 2018---
+- Completed Lab 7 Added Unit Test: TaskListTest to ensure there are more uncompleted tasks than completed ones (Mike)
+
+---Version 2.1--- Release Date: Mar 06, 2018---
+- Completed Lab 7 Question 3 - 5 - Added PHPUnit base files and a sample unit test (Mike)
+
+---Version 2.0--- Release Date: Mar 06, 2018---
+- Completed Lab 7 Question 2 - Added TaskEntity class in models (Johnny)
+
 ---Version 2.0--- Release Date: Feb 27, 2018---
 - Completed Job 11 - Polish the Task Item Maintenance (Mike)
 
