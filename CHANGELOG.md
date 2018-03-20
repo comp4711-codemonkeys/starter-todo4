@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 2.8--- Release Date: Mar 20, 2018---
+- Added Lab 8 XML tasks data (Johnny)
+
 ---Version 2.7--- Release Date: Mar 09, 2018---
 - Added magic getter back to Entity to fix unit test failures (Johnny)
 

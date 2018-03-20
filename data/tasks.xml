@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<tasks>
+    <task id="1">
+        <desc>COMP1234 assignment</desc>
+        <priority>3</priority>
+        <size>2</size>
+        <group>2</group>
+        <deadline>20170219</deadline>
+        <status>2</status>
+        <flag></flag>
+    </task>
+    
+    <task id="2">
+        <desc>Mow the lawn</desc>
+        <priority>2</priority>
+        <size>2</size>
+        <group>1</group>
+        <deadline></deadline>
+        <status>2</status>
+        <flag></flag>
+    </task>
+    
+    <task id="3">
+        <desc>Wash the car</desc>
+        <priority>2</priority>
+        <size>2</size>
+        <group>1</group>
+        <deadline></deadline>
+        <status>2</status>
+        <flag></flag>
+    </task>
+    
+    <task id="4">
+        <desc>Paint the fence</desc>
+        <priority>1</priority>
+        <size>2</size>
+        <group>1</group>
+        <deadline></deadline>
+        <status></status>
+        <flag></flag>
+    </task>
+    
+    <task id="5">
+        <desc>Intramural hockey game</desc>
+        <priority>1</priority>
+        <size>2</size>
+        <group>4</group>
+        <deadline></deadline>
+        <status></status>
+        <flag></flag>
+    </task>
+    
+    <task id="6">
+        <desc>Canucks hockey game</desc>
+        <priority>3</priority>
+        <size>3</size>
+        <group>4</group>
+        <deadline>20170305</deadline>
+        <status>2</status>
+        <flag></flag>
+    </task>
+</tasks>
+
