@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 3.1--- Release Date: Mar 20, 2018---
+- Updated model storing logic to rebuild the collection as a DOMDocument (Johnny)
+
 ---Version 3.0--- Release Date: Mar 20, 2018---
 - Made more XML tasks "uncompleted" to pass unit test (Mike)
 
