@@ -32,7 +32,7 @@ and open the template in the editor.
         <size>2</size>
         <group>1</group>
         <deadline></deadline>
-        <status>2</status>
+        <status></status>
         <flag></flag>
     </task>
     
@@ -62,7 +62,7 @@ and open the template in the editor.
         <size>3</size>
         <group>4</group>
         <deadline>20170305</deadline>
-        <status>2</status>
+        <status></status>
         <flag></flag>
     </task>
 </tasks>

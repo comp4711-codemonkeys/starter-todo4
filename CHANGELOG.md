@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 3.0--- Release Date: Mar 20, 2018---
+- Made more XML tasks "uncompleted" to pass unit test (Mike)
+
 ---Version 2.9--- Release Date: Mar 20, 2018---
 - Tasks model now loads from XML data rather than CSV data (Mike)
 - Changed XML tasks data structure (Mike)
