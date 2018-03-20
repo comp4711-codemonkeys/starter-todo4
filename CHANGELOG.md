@@ -6,6 +6,19 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 3.1--- Release Date: Mar 20, 2018---
+- Updated model storing logic to rebuild the collection as a DOMDocument (Johnny)
+
+---Version 3.0--- Release Date: Mar 20, 2018---
+- Made more XML tasks "uncompleted" to pass unit test (Mike)
+
+---Version 2.9--- Release Date: Mar 20, 2018---
+- Tasks model now loads from XML data rather than CSV data (Mike)
+- Changed XML tasks data structure (Mike)
+
+---Version 2.8--- Release Date: Mar 20, 2018---
+- Added Lab 8 XML tasks data (Johnny)
+
 ---Version 2.7--- Release Date: Mar 09, 2018---
 - Added magic getter back to Entity to fix unit test failures (Johnny)
 
