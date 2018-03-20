@@ -7,7 +7,7 @@ and open the template in the editor.
 
 <tasks>
     <task id="1">
-        <desc>COMP1234 assignment</desc>
+        <task>COMP1234 assignment</task>
         <priority>3</priority>
         <size>2</size>
         <group>2</group>
@@ -17,7 +17,7 @@ and open the template in the editor.
     </task>
     
     <task id="2">
-        <desc>Mow the lawn</desc>
+        <task>Mow the lawn</task>
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
@@ -27,17 +27,17 @@ and open the template in the editor.
     </task>
     
     <task id="3">
-        <desc>Wash the car</desc>
+        <task>Wash the car</task>
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
         <deadline></deadline>
-        <status>2</status>
+        <status></status>
         <flag></flag>
     </task>
     
     <task id="4">
-        <desc>Paint the fence</desc>
+        <task>Paint the fence</task>
         <priority>1</priority>
         <size>2</size>
         <group>1</group>
@@ -47,7 +47,7 @@ and open the template in the editor.
     </task>
     
     <task id="5">
-        <desc>Intramural hockey game</desc>
+        <task>Intramural hockey game</task>
         <priority>1</priority>
         <size>2</size>
         <group>4</group>
@@ -57,12 +57,12 @@ and open the template in the editor.
     </task>
     
     <task id="6">
-        <desc>Canucks hockey game</desc>
+        <task>Canucks hockey game</task>
         <priority>3</priority>
         <size>3</size>
         <group>4</group>
         <deadline>20170305</deadline>
-        <status>2</status>
+        <status></status>
         <flag></flag>
     </task>
 </tasks>
