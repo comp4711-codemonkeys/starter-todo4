@@ -6,6 +6,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 3.2--- Release Date: Mar 22, 2018---
+- Fixed Tasks model 'app' property referencing issue (Johnny)
+
 ---Version 3.1--- Release Date: Mar 20, 2018---
 - Updated model storing logic to rebuild the collection as a DOMDocument (Johnny)
 
