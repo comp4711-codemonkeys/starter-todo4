@@ -16,13 +16,15 @@ function orderByCategory($a, $b)
  */
 class Tasks extends XML_Model
 {
+    private $CI; // use this to reference the CI instance   
     /**
      * Constructor.
      */
     public function __construct()
     {
         parent::__construct(APPPATH . '../data/tasks.xml', 'id');
-    }
+        $this->CI = &get_instance(); // retrieve the CI instance
+    }    
 
     /**
      * Load the collection state appropriately, depending on persistence choice.
@@ -117,48 +119,48 @@ class Tasks extends XML_Model
     }
     
     /**
-	 * Store the collection state appropriately, depending on persistence choice.
-	 * OVER-RIDE THIS METHOD in persistence choice implementations
-	 */
-	protected function store()
-	{
+    * Store the collection state appropriately, depending on persistence choice.
+    * OVER-RIDE THIS METHOD in persistence choice implementations
+    */
+    protected function store()
+    {
+        /*
+        // rebuild the keys table
+        $this->reindex();
+        //---------------------
+        */
+        if (($handle = fopen($this->_origin, "w")) !== FALSE)
+        {
             /*
-            // rebuild the keys table
-            $this->reindex();
-            //---------------------
-            */
-            if (($handle = fopen($this->_origin, "w")) !== FALSE)
-            {
-                /*
-                        fputcsv($handle, $this->_fields);
-                        foreach ($this->_data as $key => $record)
-                                fputcsv($handle, array_values((array) $record));
-                        fclose($handle);
-                }
-                // --------------------
-                */
-                $xmlDoc = new DOMDocument( "1.0");
-                $xmlDoc->preserveWhiteSpace = false;
-                $xmlDoc->formatOutput = true;
-                $data = $xmlDoc->createElement($this->xml->getName());
-                foreach($this->_data as $key => $value)
-                {
-                    $task  = $xmlDoc->createElement($this->xml->children()->getName());
-                    foreach ($value as $itemkey => $record ) {
-                        if ($itemkey == 'id') {
-                            $task->setAttribute($itemkey, $record);
-                        } else {
-                            $item = $xmlDoc->createElement($itemkey, htmlspecialchars($record));
-                            $task->appendChild($item);
-                        }
-                    }
-                    $data->appendChild($task);
-                }
-                $xmlDoc->appendChild($data);
-                $xmlDoc->saveXML($xmlDoc);
-                $xmlDoc->save($this->_origin);
+                    fputcsv($handle, $this->_fields);
+                    foreach ($this->_data as $key => $record)
+                            fputcsv($handle, array_values((array) $record));
+                    fclose($handle);
             }
-	}
+            // --------------------
+            */
+            $xmlDoc = new DOMDocument( "1.0");
+            $xmlDoc->preserveWhiteSpace = false;
+            $xmlDoc->formatOutput = true;
+            $data = $xmlDoc->createElement($this->xml->getName());
+            foreach($this->_data as $key => $value)
+            {
+                $task  = $xmlDoc->createElement($this->xml->children()->getName());
+                foreach ($value as $itemkey => $record ) {
+                    if ($itemkey == 'id') {
+                        $task->setAttribute($itemkey, $record);
+                    } else {
+                        $item = $xmlDoc->createElement($itemkey, htmlspecialchars($record));
+                        $task->appendChild($item);
+                    }
+                }
+                $data->appendChild($task);
+            }
+            $xmlDoc->appendChild($data);
+            $xmlDoc->saveXML($xmlDoc);
+            $xmlDoc->save($this->_origin);
+        }
+    }
 
     function getCategorizedTasks()
     {
@@ -171,7 +173,7 @@ class Tasks extends XML_Model
 
         // substitute the category name, for sorting
         foreach ($undone as $task)
-            $task->group = $this->app->group($task->group);
+            $task->group = $this->CI->app->group($task->group); // use CI to get at the app model
 
         // order them by category
         usort($undone, "orderByCategory");
